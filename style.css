@@ -248,3 +248,279 @@ change your habit style starts here
 	width: 200px;
 	border-radius: 100%;
 }
+
+/* =======================
+extra-mile style starts here
+===========================
+*/
+
+.extra-mile {
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #222;
+	border-radius: 16px;
+	margin: 100px auto;
+	max-width: 1060px;
+}
+.extra-mile-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+.extra-mile-text > .section-title,
+.extra-mile-text > .section-subtitle {
+	text-align: left;
+}
+.extra-mile-img img {
+	width: 366px;
+	height: 312px;
+	object-fit: cover;
+	border-radius: 16px;
+}
+/*
+ ===================
+ trainings and experience style 
+ =========================
+ */
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(2, 200px);
+	margin-top: 50px;
+	padding: 20px;
+}
+.gallery-item img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.gallery-item h4 {
+	z-index: 0;
+	position: absolute;
+	color: rgba(255, 255, 255, 0.7);
+	font-family: var(--inter);
+	text-transform: capitalize;
+	font-weight: 300;
+}
+.item-1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	position: relative;
+}
+
+.item-1 h4 {
+	bottom: 20px;
+	left: 20px;
+}
+
+.item-1::before {
+	content: "";
+	display: block;
+	clear: both;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(6, 255, 210, 0.5);
+}
+.item-2 {
+	grid-column-start: 3;
+	grid-column-end: 7;
+	position: relative;
+}
+.item-2 h4 {
+	top: 20px;
+	left: 20px;
+}
+.item-2::before {
+	content: "";
+	display: block;
+	clear: both;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255, 0, 0, 0.3);
+}
+.item-3 {
+	grid-column-start: 7;
+	grid-column-end: 9;
+	position: relative;
+}
+.item-3 h4 {
+	bottom: 20px;
+	left: 20px;
+}
+.item-3::before {
+	content: "";
+	display: block;
+	clear: both;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.item-4 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	position: relative;
+}
+
+.item-4 h4 {
+	top: 20px;
+	right: 20px;
+}
+.item-4::before {
+	content: "";
+	display: block;
+	clear: both;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+.item-5 {
+	grid-column-start: 4;
+	grid-column-end: 6;
+	position: relative;
+}
+.item-5 h4,
+.item-6 h4 {
+	bottom: 20px;
+	left: 20px;
+}
+.item-5::before {
+	content: "";
+	display: block;
+	clear: both;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(66, 255, 0, 0.3);
+}
+.item-6 {
+	grid-column-start: 6;
+	grid-column-end: 9;
+	position: relative;
+}
+.item-6::before {
+	content: "";
+	display: block;
+	clear: both;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 71, 255, 0.3);
+}
+/*
+========================
+bmi calculator style starts here
+==========================
+*/
+
+.bmi-calculator {
+	padding: 100px 10px;
+}
+.bmi-inner {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.bmi-inner > .section-title,
+.bmi-inner > .section-subtitle {
+	text-align: left;
+}
+.bmi-chart-form {
+	background: rgba(34, 34, 34, 1);
+	padding: 100px 20px;
+}
+.chart-and-form {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	gap: 40px;
+}
+.chart h3,
+.form h3 {
+	font-family: var(--inter);
+	font-size: clamp(20px, 5vw, 28px);
+	font-weight: 900;
+}
+.chart table {
+	margin-top: 30px;
+	font-family: var(--inter);
+	padding: 10px;
+	text-align: left;
+}
+.chart table,
+th,
+td {
+	color: white;
+	padding: 10px;
+	border: 1px solid gray;
+	border-collapse: collapse;
+}
+.chart table td {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.form form {
+	display: grid;
+	gap: 20px;
+	margin-top: 30px;
+}
+#height {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+#weight {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#age {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+#sex {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#factor {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.form form input[type="text"],
+input[type="number"],
+select {
+	padding: 14px;
+	font-family: var(--inter);
+	font-size: 20px;
+	text-transform: capitalize;
+	border-radius: 12px;
+	border: none;
+	background-color: #383838;
+	display: flex;
+}
+.form form input::placeholder,
+select {
+	color: white;
+}
+.form form input[type="submit"] {
+	border: none;
+	font-size: 20px;
+	margin-top: 20px;
+}
