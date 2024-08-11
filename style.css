@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+@font-face {
+	font-family: "miami";
+	src: url("assets/fonts/miami.ttf");
+}
+html {
+	scroll-behavior: smooth;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--primary-color: #ffffff;
+	--secondary-color: #e6533c;
+	--text-color: #ffffff80;
+}
+a {
+	text-decoration: none;
+	display: block;
+}
+p {
+	color: var(--text-color);
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	line-height: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--primary-color);
+	font-family: "Inter", sans-serif;
+}
+img {
+	max-width: 100%;
+}
+li {
+	list-style: none;
+}
+body {
+	font-family: "Inter", sans-serif;
+	background-color: black;
+}
+.inner {
+	max-width: calc(1140px - 40px);
+	margin: 0 auto;
+}
