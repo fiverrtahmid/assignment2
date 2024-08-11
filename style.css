@@ -121,3 +121,99 @@ nav ul li a.active {
 .checkbox:hover > div.three {
 	width: 20px;
 }
+
+/* 
+=====================
+ hero section starts here 
+*/
+.hero-area {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	overflow: hidden;
+	align-items: center;
+	gap: 80px;
+}
+.hero-left {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 50%;
+}
+.hero-heading {
+	color: var(--primary-color);
+	font-weight: 900;
+	font-size: clamp(43px, 7vw, 78px);
+	line-height: 93.6px;
+}
+.hero-heading span {
+	font-family: miami;
+	font-weight: 100;
+	font-family: "Pinyon Script", cursive;
+}
+.hero-buttons {
+	display: flex;
+	gap: 10px;
+}
+.btn {
+	display: block;
+	padding: 16px 40px;
+	color: var(--primary-color);
+	text-transform: capitalize;
+	border-radius: 46px;
+	text-align: center;
+	white-space: pre;
+}
+.btn-fill {
+	background-color: var(--secondary-color);
+}
+.btn-outline {
+	border: 1px solid var(--text-color);
+}
+.hero-right {
+	background-image: url(images/Images-2.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: contain;
+	min-height: 582px;
+	width: 50%;
+	position: relative;
+}
+.badge-workout {
+	width: 193px;
+	height: 98px;
+	border-radius: 12px;
+	border: 1px solid #ffffff1a;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 13px;
+	background-color: #393939b7;
+	position: absolute;
+	top: 0%;
+	right: 50%;
+	transform: translate(116%, 124%);
+}
+.badge-tutorial {
+	height: 96px;
+	width: clamp(150px, 55%, 206px);
+	background-color: #3030308a;
+	border-radius: 12px;
+	border: 1px solid #ffffff1a;
+	display: flex;
+	padding: 13px;
+	gap: 10px;
+	justify-content: flex-start;
+	align-items: center;
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-140%, -63%);
+}
+
+.badge-tutorial .circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+}
