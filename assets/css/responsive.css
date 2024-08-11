@@ -1,0 +1,219 @@
+@media all and (max-width: 1024px) {
+	.inner {
+		max-width: calc(1024px - 50px);
+	}
+	.hero-area {
+		padding: 20px;
+	}
+
+	.hero-left {
+		width: 50%;
+	}
+	.hero-right {
+		width: 50%;
+	}
+	.footer-container {
+		flex-direction: column;
+		gap: 50px;
+	}
+	.copyright-area {
+		text-align: center;
+	}
+	.foo-item {
+		width: 100%;
+	}
+	.foo-item:last-child {
+		display: flex;
+	}
+	.get-started {
+		width: 50%;
+	}
+	.training-and-exp {
+		padding: 0 20px;
+	}
+}
+@media all and (max-width: 768px) {
+	.checkbox {
+		display: block;
+		color: #fff;
+		cursor: pointer;
+	}
+	nav {
+		display: none;
+		width: 100%;
+		position: absolute;
+		top: 110px;
+		left: 0;
+		border: none;
+		padding: 0 20px;
+		background-color: #000;
+	}
+	#check:checked ~ nav {
+		display: block;
+	}
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.hero-heading {
+		line-height: 43.2px;
+	}
+	.badge-workout {
+		transform: translate(110%, 60%);
+	}
+	.inner {
+		max-width: 100%;
+	}
+	.hero-area {
+		padding: 20px;
+		flex-direction: column;
+	}
+
+	.hero-left {
+		width: 100%;
+	}
+	.hero-right {
+		width: 100%;
+	}
+
+	.hero-heading {
+		font-size: clamp(43px, 10vw, 78px);
+		line-height: 80.6px;
+	}
+	.menu ul li a {
+		padding: 6px 16px;
+		font-size: 0.8rem;
+	}
+	.habits {
+		flex-wrap: wrap;
+	}
+	.habit-item {
+		width: 50%;
+		padding: 50px;
+	}
+	.extra-mile {
+		gap: 30px;
+		padding: 20px;
+	}
+	.chart-and-form {
+		flex-direction: column;
+	}
+	form input[type="number"] {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 460px) {
+	.dropdown > #check:checked ~ .menu {
+		display: block;
+	}
+	.header {
+		position: relative;
+	}
+	.header-item {
+		display: inline-block;
+	}
+
+	.menu {
+		display: none;
+		position: absolute;
+		width: 100%;
+		top: 50px;
+	}
+	.menu ul {
+		flex-direction: column;
+	}
+	.dropdown {
+		display: block;
+		color: var(--primary);
+		cursor: pointer;
+		text-align: right;
+		float: right;
+	}
+	.habit-item {
+		width: 100%;
+		padding: 50px;
+	}
+	.extra-mile-text {
+		gap: 20px;
+	}
+	.extra-mile {
+		flex-direction: column;
+	}
+	.training-and-exp .section-title,
+	.training-and-exp .section-subtitle {
+		text-align: left;
+	}
+	.gallery {
+		grid-template-columns: repeat(14, 1fr);
+		grid-template-rows: repeat(2, 150px);
+		padding: 0;
+	}
+	.gallery-item {
+		max-width: 100%;
+	}
+	.item-1 {
+		grid-column-start: 1;
+		grid-column-end: 8;
+	}
+	.item-2 {
+		grid-column-start: 8;
+		grid-column-end: 16;
+	}
+	.item-4 {
+		grid-column-start: 1;
+		grid-column-end: 7;
+	}
+	.item-5 {
+		grid-column-start: 7;
+		grid-column-end: 16;
+	}
+	.gallery .item-3,
+	.item-6 {
+		display: none;
+	}
+	.team {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.form .section-subtitle {
+		text-align: left;
+	}
+	form input::placeholder,
+	select {
+		font-size: 13px;
+	}
+}
+@media all and (max-width: 637px) {
+	.badge-tutorial {
+		transform: translate(-85%, -124%);
+	}
+}
+@media all and (max-width: 393px) {
+	.badge-workout {
+		transform: translate(100%, 124%);
+	}
+}
+
+@media all and (max-width: 375px) {
+	.hero-buttons {
+		display: flex;
+		gap: 10px;
+		flex-direction: column;
+	}
+	.badge-workout {
+		transform: translate(107%, 130%);
+		width: 154px;
+		height: 75px;
+	}
+	.badge-tutorial {
+		width: 154px;
+		height: 75px;
+	}
+	.badge-tutorial p,
+	.badge-workout p {
+		font-size: 12px;
+		white-space: nowrap;
+	}
+}
