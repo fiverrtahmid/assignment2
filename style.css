@@ -51,3 +51,73 @@ body {
 	max-width: calc(1140px - 40px);
 	margin: 0 auto;
 }
+
+.section-title,
+.section-subtitle {
+	text-align: center;
+}
+.section-title {
+	font-size: clamp(32px, 6vw, 48px);
+	font-weight: 900;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+}
+
+/* 
+==========================
+navigation style starts here
+=============================
+*/
+
+.header {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px 20px;
+}
+nav {
+	padding: 4px;
+	border: 1px solid #ffffff1a;
+	border-radius: 46px;
+}
+nav ul {
+	display: flex;
+	list-style: none;
+	gap: 50px;
+}
+nav ul li a {
+	text-transform: capitalize;
+	color: #fff;
+	padding: 8px 20px;
+	border-radius: 46px;
+}
+nav ul li:hover a {
+	background-color: var(--secondary-color);
+}
+nav ul li a.active {
+	background-color: var(--secondary-color);
+}
+
+#check,
+.checkbox {
+	display: none;
+}
+.checkbox div {
+	display: flex;
+	justify-content: flex-end;
+	height: 3px;
+	width: 30px;
+	background-color: #fff;
+	margin: 7px;
+	transition: all 0.5s ease;
+}
+.checkbox:hover > div.one {
+	width: 30px;
+}
+.checkbox:hover > div.two {
+	width: 25px;
+}
+.checkbox:hover > div.three {
+	width: 20px;
+}
